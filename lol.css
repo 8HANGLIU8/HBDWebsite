@@ -1,0 +1,253 @@
+
+html, body {
+    /*
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;*/
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+.frosted {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: auto;
+}
+*/
+h1 {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+    justify-content: center; /* Center horizontally */  
+    align-items: center; /* Center vertically */
+    display: flex;
+    height: 50vh;
+}
+
+h1.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+h2 {
+    font-size: 1rem;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center; /* Center horizontally */  
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -10%;
+}
+
+.container1 {
+    position: relative;
+    min-width: 100%;
+    height: 20cm;
+    left: 0;
+    background-color:orange;
+    z-index: 1;
+}
+
+.container2 {
+    position: relative;
+    min-width: 100%;
+    width:100%;
+    height: 50cm;
+    left: 0;
+    background-color: aliceblue;
+    z-index: -1;
+}
+.container3 {
+    position: relative;
+    min-width: 100%;
+    width:100%;
+    height: 40cm;
+    left: 0;
+    background-color: aliceblue;
+    z-index: -1;
+}
+
+/* ---------------*/
+
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 15%;
+    left: 48.5%;
+    font-size: 1.2rem;
+    color: aliceblue;
+    animation: fadeUpDown 1.5s infinite ease-in-out;
+    text-align: center;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.scroll-indicator span {
+    display: block;
+    font-size: 2rem;
+}
+
+@keyframes fadeUpDown {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 1;
+        color: aliceblue;
+    }
+    50% {
+        transform: translateY(10px);
+        opacity: 0.5;
+        color: aliceblue;
+    }
+}
+
+.text1234 {
+    position: sticky;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 3.5vw;
+    font-weight: 700;
+    width: 55%;
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,-50%);
+    background: linear-gradient(180deg,#CC232A,#A3262A,#982000);
+    filter: brightness(1.75);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.shiny1234{
+    position: absolute;
+    background: linear-gradient(aliceblue,red,#EE4B2B,orange, aliceblue);
+    filter: brightness(1.00);
+    width: 100%;
+    height: 50%;
+    top: 100px;
+}
+.text4321{
+    position: sticky;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 4vw;
+    font-weight: 700;
+    width: 53%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-45.5%,-50%);
+    text-align: left;
+    color: aliceblue;
+}
+.container4{
+    position: relative;
+    background: 
+                linear-gradient( aliceblue,rgb(25,31,43));
+                
+    width: 100%;
+    height: 50cm;
+}
+.imagen {
+    position: relative;
+    min-width: 100%;
+    width:100%;
+    height: 40cm;
+    left: 0;
+    z-index: 1;
+}
+.image {
+    width: 100%;
+    height: 100%;
+}
+.container5 {
+    position: relative;
+    background: rgb(24,20,36);
+    width: 100%;
+    height: 25cm;
+}
+.thanks {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 5.5vw;
+    font-weight: 700;
+    color: rgb(45, 103, 153);
+    justify-content: center; /* Center horizontally */  
+    align-items: center; /* Center vertically */
+    display: flex;
+    height: 50vh;
+}
+
+.scroll-indicator1 {
+    position: absolute;
+    bottom: 70%;
+    left: 48.5%;
+    font-size: 1.2rem;
+    color: rgb(45, 103, 153);
+    animation: fadeUpDown 1.5s infinite ease-in-out;
+    text-align: center;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.scroll-indicator1 span {
+    display: block;
+    font-size: 2rem;
+}
+.giftwallet {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 5.5vw;
+    font-weight: 700;
+    color: rgb(45, 103, 153);
+    justify-content: center; /* Center horizontally */  
+    align-items: center; /* Center vertically */
+    display: flex;
+    height: 50vh;
+}
+.image1 {
+    width: 30%;
+    height: 30%;
+    border-radius: 23px;
+    left: 10%;
+    position: relative;
+}
+.descriptiongift {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    left: 50%;
+    top:-290px;
+    position: relative;
+    width: 400px;
+    height: 300px;
+
+}
+.download-btn {
+    position: relative;
+    width: 31%;
+    height: 31%;
+    border-radius: 23px;
+    left: -21%;
+    background-color: transparent;
+    border-color: transparent;
+}

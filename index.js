@@ -24,11 +24,11 @@ setInterval(updateCountdown, 1000);
 
 // Password validation
 document.getElementById("password-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent form submission
-    const password = document.getElementById("password").value;
+    event.preventDefault();
+    const username = document.getElementById("password").value;
 
-    if (password === "hello123") {
-        // Redirect to the new page if password is correct
+    if (username === "hello123") {
+        
         window.location.href = "lol.html";
     } else {
         alert("Incorrect password. Please try again.");
