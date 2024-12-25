@@ -122,7 +122,7 @@ window.addEventListener('scroll', () => {
 
 function downloadPDF() {
     const link = document.createElement('a');
-    link.href = '../HBD Website /Seph.pdf'; // Path to your PDF file
+    link.href = 'Seph.pdf'; // Path to your PDF file
     link.download = 'Seph.pdf'; // Name of the downloaded file
     link.click();
 }
