@@ -5,3 +5,6 @@ I put all the <html> part as a comment. However, if you want to use it, just del
 future. 
 
 This is for personal use.
+
+
+No, I finally just redirect it to https://www.google.com
