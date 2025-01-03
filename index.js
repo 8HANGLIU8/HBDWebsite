@@ -1,5 +1,5 @@
 function updateCountdown() {
-    const birthday = new Date("2025-01-01T00:00:00"); // Replace with her birthday
+    const birthday = new Date("2026-01-01T00:00:00"); // Replace with her birthday
     const now = new Date();
     const diff = birthday - now;
 
@@ -27,7 +27,7 @@ document.getElementById("password-form").addEventListener("submit", function(eve
     event.preventDefault();
     const username = document.getElementById("password").value;
 
-    if (username === "hello123") {
+    if (username === "hello1234") {
         
         window.location.href = "lol.html";
     } else {
